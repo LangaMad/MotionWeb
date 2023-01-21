@@ -76,8 +76,8 @@ WSGI_APPLICATION = 'backend.config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "Motion_web_llc",
-        'USER': "motion_user",
+        'NAME': "motion_web",
+        'USER': "motion_web_user",
         "PASSWORD": "admin",
         "HOST": "127.0.0.1",
         "PORT": "5432"
