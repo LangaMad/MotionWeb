@@ -43,6 +43,10 @@ INSTALLED_APPS = [
 
     'backend.apps.accounts',
     'backend.apps.product',
+    'rest_framework_swagger',
+    'rest_framework',
+    'backend.apps.api',
+
 
 ]
 
@@ -57,6 +61,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'backend.config.urls'
+
 
 TEMPLATES = [
     {
