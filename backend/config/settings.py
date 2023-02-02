@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     'rest_framework',
     'backend.apps.api',
+    'knox',
+    'drf_yasg',
 
 
 ]
@@ -62,6 +64,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'backend.config.urls'
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        # 'rest_framework.authentication.BasicAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
+        'knox.auth.TokenAuthentication',
+    ]
+}
 
 TEMPLATES = [
     {
